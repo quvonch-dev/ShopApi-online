@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ShopAPI — Online Store</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      🛍️ <span>Shop</span>API
+    </div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#categories">Categories</a>
+    </nav>
+
+    <button class="cart-btn" id="cartBtn">
+      🛒 Cart
+      <span id="cartCount">0</span>
+    </button>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <div class="hero-content">
+
+      <p class="hero-small">
+        🔥 NEW COLLECTION
+      </p>
+
+      <h1>
+        Discover Your
+        <span>Perfect Product</span>
+      </h1>
+
+      <p>
+        Eng yaxshi mahsulotlarni toping,
+        narxlarni solishtiring va xarid qiling.
+      </p>
+
+      <a href="#products" class="hero-btn">
+        Shop Now →
+      </a>
+
+    </div>
+
+    <div class="hero-image">
+      🛍️
+    </div>
+
+  </section>
+
+
+  <!-- PRODUCTS -->
+  <main id="products">
+
+    <div class="section-title">
+      <div>
+        <p>OUR PRODUCTS</p>
+        <h2>Explore Products</h2>
+      </div>
+
+      <div class="products-count">
+        <span id="productsCount">0</span> products
+      </div>
+    </div>
+
+
+    <!-- FILTER -->
+    <div class="filter">
+
+      <div class="search-box">
+        🔎
+        <input type="text" id="search" placeholder="Mahsulot qidirish...">
+      </div>
+
+      <select id="category">
+        <option value="all">
+          Barcha kategoriyalar
+        </option>
+      </select>
+
+      <select id="sort">
+        <option value="default">
+          Saralash
+        </option>
+
+        <option value="low">
+          Narx: past → yuqori
+        </option>
+
+        <option value="high">
+          Narx: yuqori → past
+        </option>
+
+        <option value="rating">
+          Reyting
+        </option>
+      </select>
+
+    </div>
+
+
+    <!-- LOADING -->
+    <div id="loading" class="loading">
+      <div class="loader"></div>
+      <p>Mahsulotlar yuklanmoqda...</p>
+    </div>
+
+
+    <!-- PRODUCTS -->
+    <div class="products"></div>
+
+  </main>
+
+
+  <!-- CART MODAL -->
+  <div class="modal" id="cartModal">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h2>🛒 Your Cart</h2>
+
+        <button id="closeCart">
+          ✕
+        </button>
+      </div>
+
+      <div id="cartItems">
+        <p class="empty-cart">
+          Savatcha bo‘sh
+        </p>
+      </div>
+
+      <div class="cart-footer">
+
+        <h3>
+          Total:
+          $<span id="cartTotal">0</span>
+        </h3>
+
+        <button id="checkout">
+          Checkout →
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-logo">
+      🛍️ ShopAPI
+    </div>
+
+    <p>
+      JavaScript + API bilan yaratilgan online store.
+    </p>
+
+    <p>
+      © 2026 ShopAPI. All rights reserved.
+    </p>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
